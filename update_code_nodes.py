@@ -24,7 +24,7 @@ NODE_MAPPING = {
 def update_code_node(filename, node_id):
     try:
         # Read the source code from the file
-        with open(f"CodeNodes/{filename}", "r") as code_file:
+        with open(f"codenodes/{filename}", "r") as code_file:
             code_content = code_file.read()
         
         # Prepare the payload for the patch request
@@ -50,7 +50,7 @@ def update_code_node(filename, node_id):
             return False
             
     except FileNotFoundError:
-        print(f"File not found: CodeNodes/{filename}")
+        print(f"File not found: codenodes/{filename}")
         return False
     except Exception as e:
         print(f"Error updating {filename}: {str(e)}")

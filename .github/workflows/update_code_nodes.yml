@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'CodeNodes/*.py'
+      - 'codenodes/*.py'
 
 jobs:
   update-nodes:
