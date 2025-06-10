@@ -29,9 +29,18 @@ def update_code_node(filename, node_id):
         
         # Prepare the payload for the patch request
         payload = {
-            "flow_id": FLOW_ID,
-            "node_id": node_id,
-            "src_code": code_content
+            "data": {
+                "flow_id": FLOW_ID,
+                "node_id": node_id,
+                "src_code": code_content
+            },
+            "metadata": {
+                "version": "v1.0",
+                "entity_id": "string"
+            },
+            "control": {
+                "execution_mode": "sync"
+            }
         }
 
         # Make the PATCH request to update the code node
