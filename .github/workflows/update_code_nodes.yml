@@ -21,7 +21,7 @@ jobs:
     
     - name: Verify Python files
       run: |
-        for file in CodeNodes/*.py; do
+        for file in codenodes/*.py; do
           python -m py_compile "$file" || exit 1
         done
     
