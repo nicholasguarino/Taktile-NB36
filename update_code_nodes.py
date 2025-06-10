@@ -52,7 +52,6 @@ def update_code_node(filename, node_id):
 
         if response.status_code == 200:
             print(f"Successfully updated {filename} -> {node_id}")
-            print(f"API Response: {response.text}")
             return True
         else:
             print(f"Failed to update {filename}. Status: {response.status_code}")
