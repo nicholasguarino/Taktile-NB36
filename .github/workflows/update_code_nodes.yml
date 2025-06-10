@@ -44,4 +44,3 @@ jobs:
           exit 1
         fi
         echo "::notice::Successfully updated Code Nodes"
-        echo "::notice::API Response: ${{ steps.update_nodes.outputs.api_response }}"
