@@ -35,6 +35,7 @@ jobs:
         fi
     
     - name: Update Code Nodes
+      id: update_nodes
       env:
         TAKTILE_API_KEY: ${{ secrets.TAKTILE_API_KEY }}
       run: |
@@ -43,3 +44,4 @@ jobs:
           exit 1
         fi
         echo "::notice::Successfully updated Code Nodes"
+        echo "::notice::API Response: ${{ steps.update_nodes.outputs.api_response }}"
