@@ -23,10 +23,16 @@ This project contains a GitHub Actions workflow that automatically updates code 
 3. Add the following secret:
    - `TAKTILE_API_KEY`: Your Taktile API key
 
+
+Use the Taktile List Decision, and Get Decision Graph endpoints to obtain the Flow ID as well as the node IDs for the nodes you want to update
+
 ### 2. Flow Configuration
-1. Contact your Taktile Account Manager to obtain:
-   - Flow ID: The unique identifier for your flow
-   - Node IDs: The specific node IDs for each code node in your flow
+1. Use Taktile's API endpoints to obtain the necessary IDs:
+   - Use the List Decision endpoint to get an overview of available flows
+   - Use the Get Decision Graph endpoint to obtain detailed information about your flow
+   - From these endpoints, you'll need to extract:
+     - Flow ID: The unique identifier for your flow
+     - Node IDs: The specific node IDs for each code node in your flow
 2. Open `update_code_nodes.py` and update the following:
    - `FLOW_ID`: Your Taktile flow ID
    - `NODE_MAPPING`: Dictionary mapping your Python files to their corresponding node IDs
