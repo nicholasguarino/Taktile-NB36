@@ -23,9 +23,6 @@ This project contains a GitHub Actions workflow that automatically updates code 
 3. Add the following secret:
    - `TAKTILE_API_KEY`: Your Taktile API key
 
-
-Use the Taktile List Decision, and Get Decision Graph endpoints to obtain the Flow ID as well as the node IDs for the nodes you want to update
-
 ### 2. Flow Configuration
 1. Use Taktile's API endpoints to obtain the necessary IDs:
    - Use the List Decision endpoint to get an overview of available flows
