@@ -54,8 +54,3 @@ The `update_code_nodes.py` script:
 Each code node in the `codenodes` directory should be a valid Python file that implements the required functionality for your Taktile flow. The current implementation includes:
 - `Multiply.py`: Implementation for multiplication operations
 - `Summarize.py`: Implementation for summarization operations
-
-## Error Handling
-- The workflow validates Python files before attempting updates
-- Failed updates are reported in the GitHub Actions logs
-- The script exits with an error code if any updates fail
